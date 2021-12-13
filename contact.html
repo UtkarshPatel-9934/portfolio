@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Page - &copy; 2021 - Utkarsh Patel </title>
+	<link rel="stylesheet" href="myersReset.css">
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li> <a href="index.html">Main</a> </li>
+				<li> <a href="about.html">About</a> </li>
+				<li> <a href="project.html">Projects</a> </li>
+				<li> <a href="#">Contact</a> </li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<form action="#" method="post">
+			<fieldset>
+				<legend id="personalInformation">Contact Me</legend>
+				<hr>
+				<br>
+				<label for="firstName">First Name:</label>
+				<input type="text" autocomplete="off" id="firstName" name="firstName" placeholder="Your First Name here!" required>
+	
+				<br>
+				<br>
+				<label for="lastName">Last Name:</label>
+				<input type="text" autocomplete="off" id="lastName" name="lastName" placeholder="Your Last Name here!">
+	
+	
+				<br>
+				<br>
+				<label for="address">Address:</label>
+				<br>
+				<textarea id="address" autocomplete="off" name="address" placeholder="Enter Your Address Here!" required></textarea>
+	
+				<br>
+				<br>
+				<label for="city">City:</label>
+				<input type="text" autocomplete="off" id="city" name="city" placeholder="Enter City Name!" required>
+	
+				<br>
+				<br>
+				<section>
+					<label style="display: inline-block;">Province:
+					<select name="selectProvince" id="selectProvince">
+						<option value="British Columbia">British Columbia</option>
+						<option value="Alberta">Alberta</option>
+						<option value="Saskatchewan">Saskatchewan</option>
+						<option value="Manitoba">Manitoba</option>
+						<option value="Ontario">Ontario</option>
+						<option value="Quebec">Quebec</option>
+						<option value="New Brunswick">New Brunswick</option>
+						<option value="Nova Scotia">Nova Scotia</option>
+						<option value="Prince Edward Island">Prince Edward Island</option>
+						<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+						<option value="Yukon">Yukon</option>
+						<option value="Northwest Territories">Northwest Territories</option>
+						<option value="Nunavut">Nunavut</option>
+					</select>
+				</label>
+				</section>
+	
+				<br>
+				<label for="postalCode">Postal Code:</label>
+				<input type="text" autocomplete="off" name="postalCode" id="postalCode" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" placeholder="Enter Postal Code!" required>
+	
+				<br>
+				<br>
+				<label for="phoneNumber">Phone Number</label>
+				<input type="tel" autocomplete="off" name="phoneNumber" id="phoneNumber" placeholder= "000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+	
+				<br>
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" autocomplete="off" name="email" id="email" placeholder="Enter Contact Email Address here!" required>
+			</fieldset>
+	
+			<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div class="footer">
+		<footer>
+			<p class="copyrightStatement">
+				Copyright &copy; Utkarsh Patel 2021
+			</p>
+			<p class="statementFooter">
+				&reg; Registered Trademark - All Rights Reserved.
+			</p>
+		</footer>
+	</div>
+</body>
+</html>

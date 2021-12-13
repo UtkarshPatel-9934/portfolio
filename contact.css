@@ -1,0 +1,441 @@
+/*  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*  */
+
+
+body{
+	background-color: #EBF2FA;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #064789;
+}
+
+ul{
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	list-style-type: none;
+	font-size: 1.3em;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+li a:hover{
+	font-weight: bold;
+	color: #FF7F50;
+}
+
+
+.container{
+	box-sizing: border-box;
+	background-color: #97B6CE;
+	color: #246195;
+	width: 100%;
+	padding: 20px;
+	font-family: monospace;
+	text-align: center;
+}
+
+
+
+
+form{
+	box-sizing: border-box;
+	background-color: #BBCE3F;
+	border: 5px solid #064789;
+	padding: 40px;
+}
+
+legend{
+	color: #EBF2FA;
+	background-color: #97B6CE;
+	border: 3px solid #679436;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+fieldset{
+	border: 3px solid #064789;
+	padding: 20px 0;
+	background-color: #EBF2FA;
+}
+
+hr{
+	border: 1px solid;
+	background-color: #064789;
+}
+
+label{
+	margin: 30px 0;
+	color: #064789;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+input{
+	background-color: #C7D660;
+	color: black;
+	padding: 5px 5px 0 2.5px;
+	border: 2px solid black;
+}
+
+::placeholder{
+	color: black;
+	text-align: center;
+}
+
+
+textarea{
+	background-color: #C7D660;
+	padding: 5px 2.5px;
+}
+
+select{
+	background-color: #C7D660;
+	padding: 5px 2.5px;
+	color: black;
+}
+
+
+#submit{
+	margin-top: 20px;
+	color: #EBF2FA;
+	background-color: #97B6CE;
+	border: 3px solid #679436;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+
+
+footer{
+	text-align: center;
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	list-style-type: none;
+	font-size: 1.3em;
+	background-color: #064789;
+	padding: 15px;
+	color: #FF7F50;
+	font-weight: bolder;
+}
+
+.statementFooter{
+	margin-top: 10px;
+	font-size: small;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+	img{
+		height: 250px;
+		width: 390px;
+		margin-bottom: 10px;
+		box-shadow: 5px 5px 9px #252525;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+
+	ul{
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+		height: 35px;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 1.2em;
+	}
+	nav ul li{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	footer{
+		text-align: center;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 0.4em;
+		background-color: #064789;
+		padding: 15px;
+		color: #FF7F50;
+		font-weight: bolder;
+	}
+	
+	.statementFooter{
+		margin-top: 10px;
+		font-size:x-small;
+	}
+	
+}
+
+@media only screen and (max-width: 425px) {
+	ul{
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+		height: 35px;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 0.7em;
+	}
+	nav ul li{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	
+	footer{
+		text-align: center;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 0.4em;
+		background-color: #064789;
+		padding: 15px;
+		color: #FF7F50;
+		font-weight: bolder;
+	}
+	
+	.statementFooter{
+		margin-top: 10px;
+		font-size:x-small;
+	}
+
+
+
+
+
+
+	form{
+		box-sizing: border-box;
+		background-color: #BBCE3F;
+		border: 5px solid #064789;
+		padding: 20px;
+	}
+	
+	legend{
+		color: #EBF2FA;
+		background-color: #97B6CE;
+		border: 3px solid #679436;
+		padding: 5px;
+		font-weight: bold;
+		font-size: 1.3em;
+	}
+	
+	fieldset{
+		border: 3px solid #064789;
+		padding: 20px 0;
+		background-color: #EBF2FA;
+	}
+	
+	hr{
+		border: 1px solid;
+		background-color: #064789;
+	}
+	
+	label{
+		margin: 30px 0;
+		color: #064789;
+		font-weight: bold;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+	}
+	
+	input{
+		background-color: #C7D660;
+		color: black;
+		padding: 5px 5px 0 2.5px;
+		border: 2px solid black;
+	}
+	
+	::placeholder{
+		color: black;
+		text-align: center;
+	}
+	
+	
+	textarea{
+		background-color: #C7D660;
+		padding: 5px 2.5px;
+	}
+	
+	select{
+		background-color: #C7D660;
+		padding: 5px 2.5px;
+		color: black;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	ul{
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+		height: 35px;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 0.7em;
+	}
+	nav ul li{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	
+	footer{
+		text-align: center;
+		width: 100%;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		list-style-type: none;
+		font-size: 0.4em;
+		background-color: #064789;
+		padding: 15px;
+		color: #FF7F50;
+		font-weight: bolder;
+	}
+	
+	.statementFooter{
+		margin-top: 10px;
+		font-size:x-small;
+	}
+
+
+
+
+
+
+	form{
+		box-sizing: border-box;
+		background-color: #BBCE3F;
+		border: 5px solid #064789;
+		padding: 10px;
+	}
+	
+	legend{
+		color: #EBF2FA;
+		background-color: #97B6CE;
+		border: 3px solid #679436;
+		padding: 3px;
+		font-weight: bold;
+		font-size: 1.3em;
+	}
+	
+	fieldset{
+		border: 3px solid #064789;
+		padding: 10px 0;
+		background-color: #EBF2FA;
+	}
+	
+	hr{
+		border: 1px solid;
+		background-color: #064789;
+	}
+	
+	label{
+		margin: 30px 0;
+		color: #064789;
+		font-weight: bold;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+	}
+	
+	input{
+		background-color: #C7D660;
+		color: black;
+		padding: 2.5px 2.5px 0 1.5px;
+		border: 2px solid black;
+	}
+	
+	::placeholder{
+		color: black;
+		text-align: center;
+	}
+	
+	
+	textarea{
+		background-color: #C7D660;
+		padding: 2.5px 1.5px;
+	}
+	
+	select{
+		background-color: #C7D660;
+		padding: 2.5px 1.5px;
+		color: black;
+	}
+}
